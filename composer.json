@@ -1,0 +1,13 @@
+{
+    "name": "scaliter/visitor",
+    "type": "library",
+    "autoload": {
+        "psr-4": {
+            "Scaliter\\": "src/"
+        }
+    },
+    "require": {
+        "scaliter/request": "^0.1"
+    },
+    "license": "MIT"
+}
