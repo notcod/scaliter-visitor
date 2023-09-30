@@ -99,6 +99,10 @@ class Visitor
         }
         return $userLanguages;
     }
+    public static function formatTime($time): string
+    {
+        return self::$timeformat == 'h23' ? date('d.m.Y. H:i', strtotime($time)) : date('d.m.Y. h:ia', strtotime($time));
+    }
     public static function getCountryByIP(string $ip_address)
     {
         $request = file_get_contents("http://ip-api.com/json/$ip_address");
